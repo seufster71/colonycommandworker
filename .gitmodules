@@ -1,0 +1,44 @@
+[submodule "colonycommandworker/src/main/js/core"]
+	path = colonycommandworker/src/main/js/core
+	url = https://github.com/seufster71/toasthub-react-core.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/coreView"]
+	path = colonycommandworker/src/main/js/coreView
+	url = https://github.com/seufster71/toasthub-reactweb-core.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/admin"]
+	path = colonycommandworker/src/main/js/admin
+	url = https://github.com/seufster71/toasthub-react-admin.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/adminView"]
+	path = colonycommandworker/src/main/js/adminView
+	url = https://github.com/seufster71/toasthub-reactweb-admin.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/system"]
+	path = colonycommandworker/src/main/js/system
+	url = https://github.com/seufster71/toasthub-react-system.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/systemView"]
+	path = colonycommandworker/src/main/js/systemView
+	url = https://github.com/seufster71/toasthub-reactweb-system.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/member/session"]
+	path = colonycommandworker/src/main/js/member/session
+	url = https://github.com/seufster71/toasthub-react-member-session.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/member/profile"]
+	path = colonycommandworker/src/main/js/member/profile
+	url = https://github.com/seufster71/toasthub-react-member-profile.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/member/logout"]
+	path = colonycommandworker/src/main/js/member/logout
+	url = https://github.com/seufster71/toasthub-react-member-logout.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/memberView/profile"]
+	path = colonycommandworker/src/main/js/memberView/profile
+	url = https://github.com/seufster71/toasthub-reactweb-member-profile.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/memberView/logout"]
+	path = colonycommandworker/src/main/js/memberView/logout
+	url = https://github.com/seufster71/toasthub-reactweb-member-logout.git
+	branch = feature/colony_1_from_develop
