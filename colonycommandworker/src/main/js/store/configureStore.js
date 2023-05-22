@@ -8,7 +8,7 @@ export default function configureStore() {
   const initialState = {
     appPrefs: {
       lang: localStorage.getItem("lang"),
-      headerName: "Trade Analyzer",
+      headerName: "Colony Command",
       codeType: "WEB",
       debugClient: "TRACE",
       memberMenu: "MEMBER_MENU_TOP",

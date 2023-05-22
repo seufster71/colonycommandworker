@@ -85,6 +85,12 @@
 			<artifactId>toasthub-system</artifactId>
 			<version>1.0-GA</version>
 		</dependency>
+		<dependency>
+   			 <groupId>mysql</groupId>
+   			 <artifactId>mysql-connector-java</artifactId>
+   			<version>8.0.30</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

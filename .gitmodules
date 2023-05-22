@@ -42,3 +42,11 @@
 	path = colonycommandworker/src/main/js/memberView/logout
 	url = https://github.com/seufster71/toasthub-reactweb-member-logout.git
 	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/member/colony"]
+	path = colonycommandworker/src/main/js/member/colony
+	url = https://github.com/seufster71/honeypine-react-colony-queen.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/memberView/colony"]
+	path = colonycommandworker/src/main/js/memberView/colony
+	url = https://github.com/seufster71/honeypine-reactweb-colony-queen.git
+	branch = feature/colony_1_from_develop

@@ -43,6 +43,32 @@ commitAll() {
 	cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/systemView
 	checkAndCommit "${1}"
 	
+	ECHO "#### member logout"
+	cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/member/logout
+	checkAndCommit "${1}"
+	ECHO "#### member logout view"
+	cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/memberView/logout
+	checkAndCommit "${1}"
+	
+	ECHO "#### member profile"
+	cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/member/profile
+	checkAndCommit "${1}"
+	ECHO "#### member profile view"
+	cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/memberView/profile
+	checkAndCommit "${1}"
+	
+	ECHO "#### member session"
+	cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/member/session
+	checkAndCommit "${1}"
+	
+	ECHO "#### member colony"
+	cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/member/colony
+	checkAndCommit "${1}"
+	
+	ECHO "#### member colony view"
+	cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/memberView/colony
+	checkAndCommit "${1}"
+	
 	
 	ECHO "#### main"
 	cd ~/$GIT_DIR/colonycommandworker/colonycommandworker

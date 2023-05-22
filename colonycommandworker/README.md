@@ -1,9 +1,9 @@
-# tradeanalyzer
+# Colony Command
 
-Copyright (C) 2016-2022 Ryan Trade International RTI
+Copyright (C) 2023 Lydia's Honey Pine Farm
 
 
-create directory gitanalyzer and clone all project into this directory  script depend on it. 
+create directory gitcolony and clone all project into this directory  script depend on it. 
 
 Initial Setup </br>
 clone the following java repos </br>
@@ -19,7 +19,6 @@ clone db scripts </br>
 https://github.com/seufster71/toasthub-db.git </br>
 
 run command to pull and attach submodules (make sure directories are populated) </br>
-gitsubmodulesRyan.sh </br>
 
 setup database need to run both files </br>
 go to toasthub-db -> monolith -> colonycommand </br>
@@ -48,10 +47,12 @@ cd to src/main/js/member </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-member-session.git session </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-member-profile.git profile </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-member-logout.git logout </br>
+git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/honeypine-react-colony-queen.git colony </br>
 
 cd to src/main/js/memberView </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-member-profile.git profile </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-member-logout.git logout </br>
+git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/honeypine-reactweb-colony-queen.git colony </br>
 
 cd to src/main/js/member/tracker </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/colonycommand-react-tracker.git tracker </br>
@@ -63,13 +64,13 @@ git submodule add -b feature/colony_1_from_develop https://github.com/seufster71
 cd to tradeanalyzer then run npm run build </br>
 
 #### Build and deploy
-cd ~/gitanalyzer/toasthub-core/toasthub-core then run  mvn clean install </br>
-cd ~/gitanalyzer/toasthub-security/toasthub-security then run  mvn clean install </br>
-cd ~/gitanalyzer/toasthub-system/toasthub-system then run mvn clean install </br>
-cd ~/gitanalyzer/toasthub-member/toasthub-member then run  mvn clean install </br>
-cd ~/gitanalyzer/toasthub-admin/toasthub-admin then run  mvn clean install </br>
-cd ~/gitanalyzer/toasthub-trade/toasthub-trade then run  mvn clean install </br>
-cd ~/gitanalyzer/tradeanalyzer/tradeanalyzer then run  mvn clean package spring-boot:repackage </br>
+cd ~/gitcolony/toasthub-core/toasthub-core then run  mvn clean install </br>
+cd ~/gitcolony/toasthub-security/toasthub-security then run  mvn clean install </br>
+cd ~/gitcolony/toasthub-system/toasthub-system then run mvn clean install </br>
+cd ~/gitcolony/toasthub-member/toasthub-member then run  mvn clean install </br>
+cd ~/gitcolony/toasthub-admin/toasthub-admin then run  mvn clean install </br>
+cd ~/gitcolony/toasthub-trade/toasthub-trade then run  mvn clean install </br>
+cd ~/gitcolony/tradeanalyzer/tradeanalyzer then run  mvn clean package spring-boot:repackage </br>
 java -jar target/tradeanalyzer-1.0-GA.jar </br>
 
 

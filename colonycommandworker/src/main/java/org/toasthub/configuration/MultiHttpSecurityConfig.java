@@ -24,21 +24,24 @@ public class MultiHttpSecurityConfig {
 	@Autowired
     private AccessDeniedHandler accessDeniedHandler;
 
+	@Bean
 	public PasswordEncoder passwordEncoder() {
 	    return new BCryptPasswordEncoder(4);
 	}
 	
 	@Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-
+		
 			http.cors().and().csrf().disable()
 				.addFilterBefore(tenantInterceptor(), BasicAuthenticationFilter.class)
-				//.requestMatchers("/api/**")
 				.exceptionHandling().authenticationEntryPoint(restAuthenticationEntryPoint).accessDeniedHandler(accessDeniedHandler)
 				.and().httpBasic()
 				.and()
-				.authorizeHttpRequests().requestMatchers("/api/public/**", "/", "/login/**", "/css/**", "/img/**", "/libs/**", "/js/**", "/public/**", "/dist/**" ).permitAll()
-				.anyRequest().authenticated();
+				.authorizeHttpRequests((authorize) -> authorize
+						.requestMatchers("/api/public/**", "/", "/login/**", "/css/**", "/img/**", "/libs/**", "/js/**", "/public/**", "/dist/**" ).permitAll()
+			            .anyRequest().authenticated()
+						)
+				.securityContext((securityContext) -> securityContext.requireExplicitSave(false));
 			
 			return http.build();
 	}
