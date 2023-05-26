@@ -32,7 +32,7 @@ public class DataRepositoryConfiguration {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactoryData(@Qualifier("dataSourceData") DataSource ds) {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(ds);
-		em.setPackagesToScan(new String[] { "org.toasthub.pm.model","org.toasthub.trade.model" });
+		em.setPackagesToScan(new String[] { "org.toasthub.pm.model","org.toasthub.colony.model" });
 		em.setPersistenceUnitName("PUData");
  
 		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();

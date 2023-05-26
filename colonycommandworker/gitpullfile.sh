@@ -1,5 +1,5 @@
 GIT_DIR="gitcolony"
-BRANCH="feature/colony_1_on_develop"
+BRANCH="feature/colony_1_from_develop"
 
 
 ECHO admin
@@ -26,12 +26,22 @@ ECHO systemView
 cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/systemView
 git pull origin $BRANCH
 
-ECHO member trade
-cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/member/trade
+
+ECHO member social
+cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/member/social
 git pull origin $BRANCH
 
-ECHO memberView trade
-cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/memberView/trade
+ECHO memberView social
+cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/memberView/social
+git pull origin $BRANCH
+
+
+ECHO member pm
+cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/member/pm
+git pull origin $BRANCH
+
+ECHO memberView pm
+cd ~/$GIT_DIR/colonycommandworker/colonycommandworker/src/main/js/memberView/pm
 git pull origin $BRANCH
 
 

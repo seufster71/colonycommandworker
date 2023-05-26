@@ -48,11 +48,15 @@ git submodule add -b feature/colony_1_from_develop https://github.com/seufster71
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-member-profile.git profile </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-member-logout.git logout </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/honeypine-react-colony-queen.git colony </br>
+git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-member-pm.git pm </br>
+git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-member-social.git social </br>
 
 cd to src/main/js/memberView </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-member-profile.git profile </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-member-logout.git logout </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/honeypine-reactweb-colony-queen.git colony </br>
+git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-member-pm.git pm </br>
+git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-member-social.git social </br>
 
 cd to src/main/js/member/tracker </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/colonycommand-react-tracker.git tracker </br>

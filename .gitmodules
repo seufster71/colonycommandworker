@@ -50,3 +50,19 @@
 	path = colonycommandworker/src/main/js/memberView/colony
 	url = https://github.com/seufster71/honeypine-reactweb-colony-queen.git
 	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/member/pm"]
+	path = colonycommandworker/src/main/js/member/pm
+	url = https://github.com/seufster71/toasthub-react-member-pm.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/member/social"]
+	path = colonycommandworker/src/main/js/member/social
+	url = https://github.com/seufster71/toasthub-react-member-social.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/memberView/pm"]
+	path = colonycommandworker/src/main/js/memberView/pm
+	url = https://github.com/seufster71/toasthub-reactweb-member-pm.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/memberView/social"]
+	path = colonycommandworker/src/main/js/memberView/social
+	url = https://github.com/seufster71/toasthub-reactweb-member-social.git
+	branch = feature/colony_1_from_develop

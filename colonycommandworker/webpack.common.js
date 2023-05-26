@@ -17,7 +17,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Trade Analyzer",
+      title: "Colony Command",
       template: "./src/main/js/index.html",
       filename: BUILD_DIR + "/index.html",
     }),
