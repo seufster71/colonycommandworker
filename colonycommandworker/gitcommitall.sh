@@ -77,6 +77,14 @@ commitAll() {
 	cd ~/$GIT_DIR/colonycommanderworker/colonycommandworker/src/main/js/memberView/colony
 	checkAndCommit "${1}"
 	
+	ECHO "#### member ecommerce"
+	cd ~/$GIT_DIR/colonycommanderworker/colonycommandworker/src/main/js/member/ecommerce
+	checkAndCommit "${1}"
+	
+	ECHO "#### member ecommerce view"
+	cd ~/$GIT_DIR/colonycommanderworker/colonycommandworker/src/main/js/memberView/ecommerce
+	checkAndCommit "${1}"
+	
 	
 	ECHO "#### main"
 	cd ~/$GIT_DIR/colonycommanderworker/colonycommandworker
