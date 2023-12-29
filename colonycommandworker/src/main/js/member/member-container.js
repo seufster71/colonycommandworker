@@ -44,6 +44,10 @@ import CCOrganizationContainer from './colony/organization/organization-containe
 import CCHiveContainer from './colony/hive/hive-container';
 import CCHiveSensorContainer from './colony/hiveSensor/hiveSensor-container';
 
+import ECMarketContainer from './ecommerce/market/market-container';
+import ECStoreContainer from './ecommerce/store/store-container';
+import ECCartContainer from './ecommerce/cart/cart-container';
+
 import fuLogger from '../core/common/fu-logger';
 import {PrivateRoute} from '../core/common/router-utils-web';
 
@@ -143,6 +147,27 @@ export default function MemberContainer({location,navigate}) {
 			</Route>
 			<Route element={<PrivateRoute permissions={myPermissions} code="MPMDEF" pathto="/access-denied"/>} >
 				<Route path="/pm-deploy/pm-deploysystem/*" element={<PMDeploySystemContainer location={location} navigate={navigate}/>} />
+			</Route>
+			<Route element={<PrivateRoute permissions={myPermissions} code="MECMARKET" pathto="/access-denied"/>} >
+				<Route path="/ec-market/*" element={<ECMarketContainer location={location} navigate={navigate}/>} />
+			</Route>
+			<Route element={<PrivateRoute permissions={myPermissions} code="MECSTORE" pathto="/access-denied"/>} >
+				<Route path="/ec-store/*" element={<ECStoreContainer location={location} navigate={navigate}/>} />
+			</Route>
+			<Route element={<PrivateRoute permissions={myPermissions} code="MECMYSTOREINVENTORY" pathto="/access-denied"/>} >
+				<Route path="/ec-mystoreinventory/*" element={<ECStoreContainer location={location} navigate={navigate}/>} />
+			</Route>
+			<Route element={<PrivateRoute permissions={myPermissions} code="MECMYSTOREORDERS" pathto="/access-denied"/>} >
+				<Route path="/ec-mystoreorders/*" element={<ECStoreContainer location={location} navigate={navigate}/>} />
+			</Route>
+			<Route element={<PrivateRoute permissions={myPermissions} code="MECMYSTORERECEIPTS" pathto="/access-denied"/>} >
+				<Route path="/ec-mystorereceipts/*" element={<ECStoreContainer location={location} navigate={navigate}/>} />
+			</Route>
+			<Route element={<PrivateRoute permissions={myPermissions} code="MECMYSTOREEMPLOYEES" pathto="/access-denied"/>} >
+				<Route path="/ec-mystoreemployees/*" element={<ECStoreContainer location={location} navigate={navigate}/>} />
+			</Route>
+			<Route element={<PrivateRoute permissions={myPermissions} code="MECCART" pathto="/access-denied"/>} >
+				<Route path="/ec-cart/*" element={<ECCartContainer location={location} navigate={navigate}/>} />
 			</Route>
             <Route element={<PrivateRoute permissions={myPermissions} code="MG" pathto="/access-denied"/>} >
 				<Route path="/groups/*" element={<GroupsContainer location={location} navigate={navigate}/>} />

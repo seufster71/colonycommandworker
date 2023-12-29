@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { initPublic } from "./core/common/apppref-actions";
 import { sessionCheck, viewPortChange } from "./core/session/session-actions";
 
-import PageContainer from "./PageContainer.js";
+import PageContainer from "./page-container.js";
 import Bootstrap from "bootstrap/dist/css/bootstrap.css";
 import SiteCSS from "./site.css";
 import utils from './core/common/utils';

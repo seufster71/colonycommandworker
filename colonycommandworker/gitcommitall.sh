@@ -27,6 +27,14 @@ commitAll() {
 	cd ~/$GIT_DIR/colonycommanderworker/colonycommandworker/src/main/js/adminView
 	checkAndCommit "${1}"
 	
+	ECHO "#### admin"
+	cd ~/$GIT_DIR/colonycommanderworker/colonycommandworker/src/main/js/adminec
+	checkAndCommit "${1}"
+
+	ECHO "#### adminView"
+	cd ~/$GIT_DIR/colonycommanderworker/colonycommandworker/src/main/js/adminViewec
+	checkAndCommit "${1}"
+	
 	ECHO "#### core"
 	cd ~/$GIT_DIR/colonycommanderworker/colonycommandworker/src/main/js/core
 	checkAndCommit "${1}"

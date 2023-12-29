@@ -47,6 +47,13 @@ import ccorganization from '../member/colony/organization/organization-reducer';
 import cchive from '../member/colony/hive/hive-reducer';
 import cchivesensor from '../member/colony/hiveSensor/hiveSensor-reducer';
 
+import ecmarket from '../member/ecommerce/market/market-reducer';
+import ecstore from '../member/ecommerce/store/store-reducer';
+import eccart from '../member/ecommerce/cart/cart-reducer';
+
+import ecadminmarket from '../adminec/market/market-reducer';
+import ecadminstore from '../adminec/store/store-reducer'; 
+
 const rootReducer = combineReducers({
 	appPrefs,
 	appMenus,
@@ -70,7 +77,7 @@ const rootReducer = combineReducers({
 	systemservice,
 	pmteam,pmmember,pmrole,pmpermission,pmproduct,pmproject,pmrelease,pmbacklog,pmdefect,pmenhancement,pmscrum,pmsprint,pmtask,
 	pmtestcase,pmtestscript,pmworkflow,pmworkflowstep,pmdeploy,pmdeploypipeline,pmdeploysystem,
-	ccorganization, cchive, cchivesensor
+	ccorganization, cchive, cchivesensor, ecmarket, ecstore, eccart, ecadminmarket, ecadminstore
 });
 
 export default rootReducer;

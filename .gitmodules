@@ -66,3 +66,19 @@
 	path = colonycommandworker/src/main/js/memberView/social
 	url = https://github.com/seufster71/toasthub-reactweb-member-social.git
 	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/member/ecommerce"]
+	path = colonycommandworker/src/main/js/member/ecommerce
+	url = https://github.com/seufster71/toasthub-react-member-ecommerce.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/memberView/ecommerce"]
+	path = colonycommandworker/src/main/js/memberView/ecommerce
+	url = https://github.com/seufster71/toasthub-reactweb-member-ecommerce.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/adminec"]
+	path = colonycommandworker/src/main/js/adminec
+	url = https://github.com/seufster71/toasthub-react-admin-ec.git
+	branch = feature/colony_1_from_develop
+[submodule "colonycommandworker/src/main/js/adminViewec"]
+	path = colonycommandworker/src/main/js/adminViewec
+	url = https://github.com/seufster71/toasthub-reactweb-admin-ec.git
+	branch = feature/colony_1_from_develop

@@ -12,8 +12,9 @@ https://github.com/seufster71/toasthub-member.git </br>
 https://github.com/seufster71/toasthub-security.git </br>
 https://github.com/seufster71/toasthub-admin.git </br>
 https://github.com/seufster71/toasthub-system.git </br>
-https://github.com/RyanScout/toasthub-trade.git </br>
-https://github.com/RyanScout/tradeanalyzer.git </br>
+https://github.com/seufster71/toasthub-pm.git </br>
+https://github.com/seufster71/toasthub-colony.git </br>
+https://github.com/seufster71/toasthub-ecommerce.git </br>
 
 clone db scripts </br>
 https://github.com/seufster71/toasthub-db.git </br>
@@ -40,6 +41,8 @@ git submodule add -b feature/colony_1_from_develop https://github.com/seufster71
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-core.git coreView </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-admin.git admin </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-admin.git adminView </br>
+git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-admin-ec.git adminec </br>
+git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-admin-ec.git adminViewec </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-system.git system </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-system.git systemView </br>
 
@@ -50,6 +53,7 @@ git submodule add -b feature/colony_1_from_develop https://github.com/seufster71
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/honeypine-react-colony-queen.git colony </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-member-pm.git pm </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-member-social.git social </br>
+git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-react-member-ecommerce.git ecommerce </br>
 
 cd to src/main/js/memberView </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-member-profile.git profile </br>
@@ -57,6 +61,7 @@ git submodule add -b feature/colony_1_from_develop https://github.com/seufster71
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/honeypine-reactweb-colony-queen.git colony </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-member-pm.git pm </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-member-social.git social </br>
+git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/toasthub-reactweb-member-ecommerce.git ecommerce </br>
 
 cd to src/main/js/member/tracker </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/colonycommand-react-tracker.git tracker </br>
@@ -65,17 +70,19 @@ cd to src/main/js/memberView/tracker </br>
 git submodule add -b feature/colony_1_from_develop https://github.com/seufster71/colonycommand-reactweb-tracker.git tracker </br>
 
 #### Build react
-cd to tradeanalyzer then run npm run build </br>
+cd to colonycommandworker then run npm run build </br>
 
 #### Build and deploy
 cd ~/gitcolony/toasthub-core/toasthub-core then run  mvn clean install </br>
 cd ~/gitcolony/toasthub-security/toasthub-security then run  mvn clean install </br>
 cd ~/gitcolony/toasthub-system/toasthub-system then run mvn clean install </br>
 cd ~/gitcolony/toasthub-member/toasthub-member then run  mvn clean install </br>
+cd ~/gitcolony/toasthub-colony/toasthub-colony then run  mvn clean install </br>
+cd ~/gitcolony/toasthub-ecommerce/toasthub-ecommerce then run  mvn clean install </br>
 cd ~/gitcolony/toasthub-admin/toasthub-admin then run  mvn clean install </br>
-cd ~/gitcolony/toasthub-trade/toasthub-trade then run  mvn clean install </br>
-cd ~/gitcolony/tradeanalyzer/tradeanalyzer then run  mvn clean package spring-boot:repackage </br>
-java -jar target/tradeanalyzer-1.0-GA.jar </br>
+
+cd ~/gitcolony/colonycommandworker/colonycommandworker then run  mvn clean package spring-boot:repackage </br>
+java -jar target/colonycommandworker-1.0-GA.jar </br>
 
 
 #### Create db users
